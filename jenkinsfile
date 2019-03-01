@@ -3,7 +3,7 @@ pipeline{
     stages {
         stage('Bulid'){
             steps{
-                sh "git clone https://github.com/alshamari/another-try.git"
+               sh " checkout scm "
             }
         }
         stage('Test'){
