@@ -1,0 +1,22 @@
+pipeline{
+    agent any
+    stages {
+        stage('Bulid'){
+            steps{
+                sh "git clone https://github.com/alshamari/another-try.git"
+            }
+        }
+        stage('Test'){
+            steps{
+               echo "hello" 
+            }
+            
+        }
+        stage('Deploy'){
+            steps{
+               echo "hello" 
+            }
+            
+        }
+    }
+}
